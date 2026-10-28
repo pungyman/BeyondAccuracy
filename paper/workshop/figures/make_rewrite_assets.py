@@ -12,6 +12,8 @@ import statistics
 import sys
 from pathlib import Path
 
+import matplotlib
+matplotlib.use("Agg")  # Figure regeneration must also work on headless machines.
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import TwoSlopeNorm
