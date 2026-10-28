@@ -1,0 +1,1231 @@
+{
+  "generated_by": "paper/workshop/numbers/b6_probes.py",
+  "source": "results/E10/<tag>/E10_probe_erasure_<tag>.csv",
+  "headline_cell": {
+    "rank": 10,
+    "lam": 1.0
+  },
+  "models": {
+    "Qwen2.5-7B-Instruct": {
+      "model_tag": "Qwen2.5-7B-Instruct",
+      "present": true,
+      "trough_layer": 18,
+      "n_layers": 28,
+      "clean_probe_acc": 1.0,
+      "floor_at_trough": 0.0861,
+      "floor_range_over_layers": [
+        0.0861,
+        0.0932
+      ],
+      "floor_measured_by_label_permutation": true,
+      "headline_rank10_lam1_at_trough": {
+        "alg1": {
+          "frozen": 0.3575,
+          "retrained": 1.0,
+          "floor": 0.0861,
+          "frozen_over_floor": 0.2713
+        },
+        "diffpca": {
+          "frozen": 0.4407,
+          "retrained": 1.0,
+          "floor": 0.0861,
+          "frozen_over_floor": 0.3546
+        },
+        "pooled": {
+          "frozen": 0.364,
+          "retrained": 1.0,
+          "floor": 0.0861,
+          "frozen_over_floor": 0.2779
+        },
+        "random": {
+          "frozen": 1.0,
+          "retrained": 1.0,
+          "floor": 0.0861,
+          "frozen_over_floor": 0.9139
+        }
+      },
+      "dose_response_rank10_at_trough": {
+        "alg1": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 0.9978,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.724,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.5498,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.3575,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 0.9982,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.8175,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.5295,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.4407,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 0.9993,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.8385,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.4545,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.364,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "rank_curve_lam1_at_trough": {
+        "alg1": {
+          "1": {
+            "frozen": 0.9116,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.4935,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.5658,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.692,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.3575,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "1": {
+            "frozen": 0.8178,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.7862,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.5291,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.3665,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.4407,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.4073,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.1825,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.1858,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "1": {
+            "frozen": 0.9949,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.9425,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.8167,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.5364,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.364,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.4276,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.2425,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.1818,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "retrained": {
+        "n_cells": 127,
+        "min_acc": 0.999273,
+        "min_cell": {
+          "layer": 20,
+          "subspace": "alg1",
+          "rank": 10,
+          "lam": 1.0
+        },
+        "n_below_0.99": 0
+      },
+      "frozen_alg1_r10_lam1_by_layer": {
+        "0": 0.468,
+        "1": 0.0924,
+        "2": 0.3629,
+        "3": 0.2731,
+        "4": 0.4451,
+        "5": 0.6225,
+        "6": 0.1735,
+        "7": 0.2491,
+        "8": 0.1807,
+        "9": 0.4731,
+        "10": 0.3662,
+        "11": 0.2811,
+        "12": 0.6113,
+        "13": 0.3167,
+        "14": 0.5047,
+        "15": 0.8393,
+        "16": 0.4618,
+        "17": 0.7713,
+        "18": 0.3575,
+        "19": 0.252,
+        "20": 0.2633,
+        "21": 0.1687,
+        "22": 0.1778,
+        "23": 0.3938,
+        "24": 0.1807,
+        "25": 0.7433,
+        "26": 0.8898,
+        "27": 0.6793
+      },
+      "frozen_alg1_r10_lam1_layer_range": [
+        0.0924,
+        0.8898
+      ]
+    },
+    "Qwen3-8B": {
+      "model_tag": "Qwen3-8B",
+      "present": true,
+      "trough_layer": 21,
+      "n_layers": 36,
+      "clean_probe_acc": 1.0,
+      "floor_at_trough": 0.0921,
+      "floor_range_over_layers": [
+        0.0889,
+        0.0921
+      ],
+      "floor_measured_by_label_permutation": true,
+      "headline_rank10_lam1_at_trough": {
+        "alg1": {
+          "frozen": 0.2433,
+          "retrained": 1.0,
+          "floor": 0.0921,
+          "frozen_over_floor": 0.1511
+        },
+        "diffpca": {
+          "frozen": 0.2964,
+          "retrained": 1.0,
+          "floor": 0.0921,
+          "frozen_over_floor": 0.2042
+        },
+        "pooled": {
+          "frozen": 0.1858,
+          "retrained": 1.0,
+          "floor": 0.0921,
+          "frozen_over_floor": 0.0937
+        },
+        "random": {
+          "frozen": 1.0,
+          "retrained": 1.0,
+          "floor": 0.0921,
+          "frozen_over_floor": 0.9079
+        }
+      },
+      "dose_response_rank10_at_trough": {
+        "alg1": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.9651,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.712,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.2433,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.9105,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.5604,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.2964,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.9996,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.5342,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.1858,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "rank_curve_lam1_at_trough": {
+        "alg1": {
+          "1": {
+            "frozen": 0.9375,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.8382,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.7644,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.7047,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.2433,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "1": {
+            "frozen": 0.9305,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.836,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.7996,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.6335,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.2964,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.1236,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.1676,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.1036,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.9825,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.9018,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.7007,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.1858,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.2713,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.0909,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.2185,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "retrained": {
+        "n_cells": 151,
+        "min_acc": 0.997091,
+        "min_cell": {
+          "layer": 0,
+          "subspace": "alg1",
+          "rank": 10,
+          "lam": 1.0
+        },
+        "n_below_0.99": 0
+      },
+      "frozen_alg1_r10_lam1_by_layer": {
+        "0": 0.0909,
+        "1": 0.0909,
+        "2": 0.3636,
+        "3": 0.268,
+        "4": 0.1818,
+        "5": 0.2196,
+        "6": 0.216,
+        "7": 0.4196,
+        "8": 0.3942,
+        "9": 0.348,
+        "10": 0.1833,
+        "11": 0.2364,
+        "12": 0.3175,
+        "13": 0.2327,
+        "14": 0.3807,
+        "15": 0.6709,
+        "16": 0.3825,
+        "17": 0.1858,
+        "18": 0.1491,
+        "19": 0.0978,
+        "20": 0.112,
+        "21": 0.2433,
+        "22": 0.1353,
+        "23": 0.1905,
+        "24": 0.3385,
+        "25": 0.1036,
+        "26": 0.2076,
+        "27": 0.4833,
+        "28": 0.824,
+        "29": 0.1953,
+        "30": 0.1316,
+        "31": 0.1033,
+        "32": 0.2556,
+        "33": 0.1902,
+        "34": 0.0909,
+        "35": 0.1669
+      },
+      "frozen_alg1_r10_lam1_layer_range": [
+        0.0909,
+        0.824
+      ]
+    },
+    "DeepSeek-R1-Distill-Qwen-7B": {
+      "model_tag": "DeepSeek-R1-Distill-Qwen-7B",
+      "present": true,
+      "trough_layer": 16,
+      "n_layers": 28,
+      "clean_probe_acc": 1.0,
+      "floor_at_trough": 0.0889,
+      "floor_range_over_layers": [
+        0.0889,
+        0.0937
+      ],
+      "floor_measured_by_label_permutation": true,
+      "headline_rank10_lam1_at_trough": {
+        "alg1": {
+          "frozen": 0.9458,
+          "retrained": 1.0,
+          "floor": 0.0889,
+          "frozen_over_floor": 0.8569
+        },
+        "diffpca": {
+          "frozen": 0.9255,
+          "retrained": 1.0,
+          "floor": 0.0889,
+          "frozen_over_floor": 0.8365
+        },
+        "pooled": {
+          "frozen": 0.992,
+          "retrained": 1.0,
+          "floor": 0.0889,
+          "frozen_over_floor": 0.9031
+        },
+        "random": {
+          "frozen": 1.0,
+          "retrained": 1.0,
+          "floor": 0.0889,
+          "frozen_over_floor": 0.9111
+        }
+      },
+      "dose_response_rank10_at_trough": {
+        "alg1": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.9996,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.9458,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.9989,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.9255,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.992,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 0.9996
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 0.9996
+          },
+          "0.75": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "rank_curve_lam1_at_trough": {
+        "alg1": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.9996,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.9458,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.9964,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.9255,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.9313,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.992,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.9949,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.9993,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.9985,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.992,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.9909,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.9956,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.9916,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "retrained": {
+        "n_cells": 127,
+        "min_acc": 0.998545,
+        "min_cell": {
+          "layer": 26,
+          "subspace": "alg1",
+          "rank": 10,
+          "lam": 1.0
+        },
+        "n_below_0.99": 0
+      },
+      "frozen_alg1_r10_lam1_by_layer": {
+        "0": 0.5418,
+        "1": 0.2887,
+        "2": 0.6007,
+        "3": 0.8862,
+        "4": 0.9091,
+        "5": 0.8087,
+        "6": 0.7356,
+        "7": 0.8818,
+        "8": 0.9265,
+        "9": 0.9935,
+        "10": 1.0,
+        "11": 0.9978,
+        "12": 0.9422,
+        "13": 0.9425,
+        "14": 0.9985,
+        "15": 0.9945,
+        "16": 0.9458,
+        "17": 0.8618,
+        "18": 0.8073,
+        "19": 0.9498,
+        "20": 0.8789,
+        "21": 0.8615,
+        "22": 0.9396,
+        "23": 0.7593,
+        "24": 0.8964,
+        "25": 0.9571,
+        "26": 0.9771,
+        "27": 0.9927
+      },
+      "frozen_alg1_r10_lam1_layer_range": [
+        0.2887,
+        1.0
+      ]
+    },
+    "GLM-Z1-9B-0414": {
+      "model_tag": "GLM-Z1-9B-0414",
+      "present": true,
+      "trough_layer": 20,
+      "n_layers": 40,
+      "clean_probe_acc": 1.0,
+      "floor_at_trough": 0.0927,
+      "floor_range_over_layers": [
+        0.0901,
+        0.0927
+      ],
+      "floor_measured_by_label_permutation": true,
+      "headline_rank10_lam1_at_trough": {
+        "alg1": {
+          "frozen": 0.3367,
+          "retrained": 1.0,
+          "floor": 0.0927,
+          "frozen_over_floor": 0.2441
+        },
+        "diffpca": {
+          "frozen": 0.4942,
+          "retrained": 1.0,
+          "floor": 0.0927,
+          "frozen_over_floor": 0.4015
+        },
+        "pooled": {
+          "frozen": 0.2905,
+          "retrained": 1.0,
+          "floor": 0.0927,
+          "frozen_over_floor": 0.1979
+        },
+        "random": {
+          "frozen": 1.0,
+          "retrained": 1.0,
+          "floor": 0.0927,
+          "frozen_over_floor": 0.9073
+        }
+      },
+      "dose_response_rank10_at_trough": {
+        "alg1": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 0.9069,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.7353,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.3895,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.3367,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 0.9942,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.6371,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.6269,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.4942,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 0.9993,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 0.7731,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 0.6764,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 0.2905,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "0": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.25": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "0.75": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "rank_curve_lam1_at_trough": {
+        "alg1": {
+          "1": {
+            "frozen": 0.9993,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.7236,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.3029,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.4593,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.3367,
+            "retrained": 1.0
+          }
+        },
+        "diffpca": {
+          "1": {
+            "frozen": 0.9553,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.716,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.6913,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.4691,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.4942,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.2778,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.2964,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.4051,
+            "retrained": 1.0
+          }
+        },
+        "pooled": {
+          "1": {
+            "frozen": 0.9971,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 0.9927,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 0.9953,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 0.5465,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 0.2905,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 0.4731,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 0.4847,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 0.3309,
+            "retrained": 1.0
+          }
+        },
+        "random": {
+          "1": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "2": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "3": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "5": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "10": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "20": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "50": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          },
+          "100": {
+            "frozen": 1.0,
+            "retrained": 1.0
+          }
+        }
+      },
+      "retrained": {
+        "n_cells": 163,
+        "min_acc": 0.999273,
+        "min_cell": {
+          "layer": 0,
+          "subspace": "alg1",
+          "rank": 10,
+          "lam": 1.0
+        },
+        "n_below_0.99": 0
+      },
+      "frozen_alg1_r10_lam1_by_layer": {
+        "0": 0.0909,
+        "1": 0.1385,
+        "2": 0.0909,
+        "3": 0.1935,
+        "4": 0.5298,
+        "5": 0.092,
+        "6": 0.176,
+        "7": 0.2749,
+        "8": 0.0931,
+        "9": 0.1818,
+        "10": 0.1796,
+        "11": 0.1567,
+        "12": 0.1796,
+        "13": 0.1818,
+        "14": 0.1818,
+        "15": 0.3404,
+        "16": 0.2593,
+        "17": 0.4938,
+        "18": 0.4444,
+        "19": 0.2745,
+        "20": 0.3367,
+        "21": 0.2775,
+        "22": 0.3673,
+        "23": 0.3455,
+        "24": 0.1313,
+        "25": 0.2455,
+        "26": 0.3593,
+        "27": 0.2593,
+        "28": 0.3913,
+        "29": 0.5244,
+        "30": 0.1945,
+        "31": 0.4462,
+        "32": 0.2727,
+        "33": 0.184,
+        "34": 0.9636,
+        "35": 0.996,
+        "36": 0.9996,
+        "37": 0.9964,
+        "38": 0.5131,
+        "39": 0.9087
+      },
+      "frozen_alg1_r10_lam1_layer_range": [
+        0.0909,
+        0.9996
+      ]
+    }
+  },
+  "missing": []
+}

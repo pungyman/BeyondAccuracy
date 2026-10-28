@@ -1,0 +1,53 @@
+{
+  "source_url": "https://papers.nips.cc/paper_files/paper/2025/file/372bd0e47f2d5bceca7e300e1446849c-Paper-Conference.pdf",
+  "source_location": "NeurIPS 2025 proceedings version, Table 1, PDF page 5",
+  "verified_date": "2026-09-10",
+  "units": "percent accuracy, transcribed from the published per-language rows",
+  "language_order": ["en", "es", "fr", "de", "zh", "ja", "ru", "th", "te", "bn", "sw"],
+  "models": {
+    "Qwen2.5-7B-Instruct": {
+      "published_name": "Qwen-2.5-Instruct-7B",
+      "reported_average": {
+        "clean_accuracy": 69.82,
+        "intervention_accuracy": 70.76,
+        "clean_fidelity": 79.75,
+        "intervention_fidelity": 84.44
+      },
+      "clean": [92.4, 82.8, 78.8, 77.2, 82.8, 72.4, 81.2, 79.2, 36.8, 67.6, 16.8],
+      "intervention": [92.8, 84.0, 79.6, 80.4, 84.4, 73.6, 82.8, 79.2, 37.2, 64.4, 20.0]
+    },
+    "Qwen3-8B_think": {
+      "published_name": "Qwen-3-8B-Thinking",
+      "reported_average": {
+        "clean_accuracy": 84.15,
+        "intervention_accuracy": 85.42,
+        "clean_fidelity": 27.24,
+        "intervention_fidelity": 27.27
+      },
+      "clean": [96.4, 88.0, 82.4, 79.2, 87.2, 85.2, 89.2, 90.0, 80.8, 88.0, 59.2],
+      "intervention": [96.0, 90.4, 84.4, 83.6, 89.2, 87.6, 89.2, 90.4, 81.2, 87.2, 60.4]
+    },
+    "DeepSeek-R1-Distill-Qwen-7B": {
+      "published_name": "R1-Distill-Qwen-7B",
+      "reported_average": {
+        "clean_accuracy": 56.11,
+        "intervention_accuracy": 58.51,
+        "clean_fidelity": 90.98,
+        "intervention_fidelity": 92.18
+      },
+      "clean": [70.0, 65.2, 67.6, 74.0, 78.0, 54.4, 70.4, 55.2, 27.2, 48.8, 6.4],
+      "intervention": [71.2, 69.2, 68.8, 73.2, 81.2, 57.2, 73.6, 56.8, 29.6, 54.8, 7.6]
+    },
+    "GLM-Z1-9B-0414": {
+      "published_name": "GLM-Z1-9B",
+      "reported_average": {
+        "clean_accuracy": 69.64,
+        "intervention_accuracy": 71.16,
+        "clean_fidelity": 55.96,
+        "intervention_fidelity": 56.04
+      },
+      "clean": [94.0, 80.8, 74.0, 75.6, 84.8, 73.2, 83.2, 70.8, 41.6, 41.6, 44.4],
+      "intervention": [94.8, 85.2, 72.8, 76.0, 87.2, 79.2, 80.8, 71.6, 42.4, 43.6, 47.2]
+    }
+  }
+}

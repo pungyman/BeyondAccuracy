@@ -1,0 +1,133 @@
+{
+  "generated_by": "paper/workshop/figures/make_rewrite_assets.py",
+  "units": "percentage-point change from each protocol's own baseline",
+  "prompt_switch_languages": [
+    "bn",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ru",
+    "sw",
+    "te",
+    "th"
+  ],
+  "published_source": "https://papers.nips.cc/paper_files/paper/2025/file/372bd0e47f2d5bceca7e300e1446849c-Paper-Conference.pdf",
+  "published_table": "Table 1; reported 11-language accuracy and fidelity averages",
+  "fidelity_conventions": {
+    "prompt_pivots": "strict; unidentified responses count as failures",
+    "joint": "strict for every score"
+  },
+  "models": {
+    "Qwen2.5-7B-Instruct": {
+      "aggregate_source": "results/E8/promptctl_agg_Qwen2.5-7B-Instruct.csv",
+      "joint_source": "paper/workshop/numbers/b9_prompt_control.json",
+      "pivots": {
+        "en": {
+          "accuracy": 1.7777777777777792,
+          "fidelity": -64.71111111111111,
+          "joint": -40.488888888888894
+        },
+        "zh": {
+          "accuracy": 3.422222222222223,
+          "fidelity": -95.4511111111111,
+          "joint": -58.22222222222222
+        }
+      },
+      "translate_test_accuracy_delta": {
+        "en": 27.022222222222226,
+        "zh": 19.511111111111116
+      },
+      "zhao_accuracy_delta": 0.9400000000000119,
+      "zhao_fidelity_delta": 4.689999999999998
+    },
+    "Qwen3-8B_think": {
+      "aggregate_source": "results/E8/promptctl_agg_Qwen3-8B_think.csv",
+      "joint_source": "results/E8/recovered/Qwen3-8B_think_joint.csv",
+      "pivots": {
+        "en": {
+          "accuracy": 1.8666666666666683,
+          "fidelity": -80.44444444444446,
+          "joint": -65.24444444444444
+        },
+        "zh": {
+          "accuracy": -1.733333333333333,
+          "fidelity": -77.33333333333333,
+          "joint": -63.15555555555555
+        }
+      },
+      "translate_test_accuracy_delta": {
+        "en": 14.088888888888887,
+        "zh": 6.355555555555556
+      },
+      "zhao_accuracy_delta": 1.269999999999996,
+      "zhao_fidelity_delta": 0.030000000000001137
+    },
+    "Qwen3-8B_nothink": {
+      "aggregate_source": "results/E8/promptctl_agg_Qwen3-8B_nothink.csv",
+      "joint_source": "results/E8/recovered/Qwen3-8B_nothink_joint.csv",
+      "pivots": {
+        "en": {
+          "accuracy": 1.4222222222222198,
+          "fidelity": -72.35555555555557,
+          "joint": -53.2888888888889
+        },
+        "zh": {
+          "accuracy": 0.3555555555555534,
+          "fidelity": -50.88888888888889,
+          "joint": -37.86666666666667
+        }
+      },
+      "translate_test_accuracy_delta": {
+        "en": 20.044444444444437,
+        "zh": 10.844444444444441
+      },
+      "zhao_accuracy_delta": null,
+      "zhao_fidelity_delta": null
+    },
+    "DeepSeek-R1-Distill-Qwen-7B": {
+      "aggregate_source": "results/E8/promptctl_agg_DeepSeek-R1-Distill-Qwen-7B.csv",
+      "joint_source": "paper/workshop/numbers/b9_prompt_control.json",
+      "pivots": {
+        "en": {
+          "accuracy": 1.0666666666666678,
+          "fidelity": -22.494444444444447,
+          "joint": -6.711111111111112
+        },
+        "zh": {
+          "accuracy": 2.577777777777776,
+          "fidelity": -31.091111111111115,
+          "joint": -9.466666666666669
+        }
+      },
+      "translate_test_accuracy_delta": {
+        "en": 32.577777777777776,
+        "zh": 28.53333333333333
+      },
+      "zhao_accuracy_delta": 2.3999999999999986,
+      "zhao_fidelity_delta": 1.2000000000000028
+    },
+    "GLM-Z1-9B-0414_glm-v2-seed0": {
+      "aggregate_source": "results/E8/promptctl_agg_GLM-Z1-9B-0414_glm-v2-seed0.csv",
+      "joint_source": "results/E8/promptctl_joint_GLM-Z1-9B-0414_glm-v2-seed0.csv",
+      "pivots": {
+        "en": {
+          "accuracy": 6.533333333333334,
+          "fidelity": -76.75555555555556,
+          "joint": -55.733333333333334
+        },
+        "zh": {
+          "accuracy": -0.2666666666666663,
+          "fidelity": -72.75555555555555,
+          "joint": -52.75555555555555
+        }
+      },
+      "translate_test_accuracy_delta": {
+        "en": 25.911111111111108,
+        "zh": 17.51111111111111
+      },
+      "zhao_accuracy_delta": 1.519999999999996,
+      "zhao_fidelity_delta": 0.0799999999999983
+    }
+  }
+}

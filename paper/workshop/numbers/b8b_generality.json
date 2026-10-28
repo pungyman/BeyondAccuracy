@@ -1,0 +1,184 @@
+{
+  "generated_by": "paper/workshop/numbers/b8b_generality.py",
+  "source": "results/E8/joint_summary.csv",
+  "reference": "clean (the unmodified model)",
+  "models": [
+    "Llama-3.1-8B-Instruct",
+    "Mistral-7B-Instruct-v0.3",
+    "Phi-3.5-mini-instruct",
+    "Qwen2.5-3B-Instruct",
+    "Qwen2.5-7B-Instruct",
+    "gemma-2-2b-it"
+  ],
+  "n_comparisons": 114,
+  "significant_increases": 11,
+  "significant_increases_passing_truncation_gate": 4,
+  "significant_decreases": 56,
+  "increases": [
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "diffpca_raw_tuned",
+      "d_joint": 0.1973,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "alg1_tuned",
+      "d_joint": 0.1733,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "diffpca_tuned",
+      "d_joint": 0.168,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "high",
+      "cond": "diffpca_raw_tuned",
+      "d_joint": 0.112,
+      "p_holm": 0.0,
+      "confounded": false
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "high",
+      "cond": "diffpca_tuned",
+      "d_joint": 0.1017,
+      "p_holm": 0.0,
+      "confounded": false
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "diffpca_raw_wiener_tuned",
+      "d_joint": 0.096,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "diffpca_wiener_tuned",
+      "d_joint": 0.088,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "high",
+      "cond": "alg1_tuned",
+      "d_joint": 0.0869,
+      "p_holm": 0.0,
+      "confounded": false
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "diffpca_oblique_tuned",
+      "d_joint": 0.0827,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "low",
+      "cond": "diffpca_raw_oblique_tuned",
+      "d_joint": 0.0827,
+      "p_holm": 0.0,
+      "confounded": true
+    },
+    {
+      "model": "gemma-2-2b-it",
+      "pool": "high",
+      "cond": "diffpca_raw_wiener_tuned",
+      "d_joint": 0.0583,
+      "p_holm": 0.008,
+      "confounded": false
+    }
+  ],
+  "models_with_any_increase": [
+    "gemma-2-2b-it"
+  ],
+  "clean_baselines": {
+    "Llama-3.1-8B-Instruct": {
+      "high": {
+        "accuracy": 0.7029,
+        "fidelity": 1.0,
+        "joint": 0.7029
+      },
+      "low": {
+        "accuracy": 0.5467,
+        "fidelity": 1.0,
+        "joint": 0.5467
+      }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+      "high": {
+        "accuracy": 0.4091,
+        "fidelity": 0.9977,
+        "joint": 0.408
+      },
+      "low": {
+        "accuracy": 0.1413,
+        "fidelity": 0.9947,
+        "joint": 0.1413
+      }
+    },
+    "Phi-3.5-mini-instruct": {
+      "high": {
+        "accuracy": 0.7131,
+        "fidelity": 1.0,
+        "joint": 0.7131
+      },
+      "low": {
+        "accuracy": 0.168,
+        "fidelity": 0.9973,
+        "joint": 0.168
+      }
+    },
+    "Qwen2.5-3B-Instruct": {
+      "high": {
+        "accuracy": 0.7051,
+        "fidelity": 1.0,
+        "joint": 0.7051
+      },
+      "low": {
+        "accuracy": 0.3493,
+        "fidelity": 0.9947,
+        "joint": 0.3467
+      }
+    },
+    "Qwen2.5-7B-Instruct": {
+      "high": {
+        "accuracy": 0.792,
+        "fidelity": 0.9989,
+        "joint": 0.7909
+      },
+      "low": {
+        "accuracy": 0.536,
+        "fidelity": 0.9893,
+        "joint": 0.5253
+      }
+    },
+    "gemma-2-2b-it": {
+      "high": {
+        "accuracy": 0.4903,
+        "fidelity": 0.5326,
+        "joint": 0.2926
+      },
+      "low": {
+        "accuracy": 0.32,
+        "fidelity": 0.112,
+        "joint": 0.024
+      }
+    }
+  }
+}

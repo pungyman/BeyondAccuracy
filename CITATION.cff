@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this implementation. Proceedings metadata will be added when available."
+title: "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve"
+type: software
+authors:
+  - family-names: Punglia
+    given-names: Shaanil
+  - family-names: Telwadkar
+    given-names: Dadhichi
+  - family-names: Rathore
+    given-names: Vaibhav
+  - family-names: Sureka
+    given-names: Siddharth
+  - family-names: Bhargava
+    given-names: Neha
+repository-code: "https://github.com/pungyman/BeyondAccuracy"
+url: "https://github.com/pungyman/BeyondAccuracy"
+abstract: "Official implementation for the paper accepted at Multi-LLL 2026, an AACL-IJCNLP workshop. Evaluates translation geometry, language decodability after projection, and multilingual generation under activation interventions and prompt-language controls."
+keywords:
+  - mechanistic interpretability
+  - multilingual reasoning
+  - activation interventions
+  - language subspaces

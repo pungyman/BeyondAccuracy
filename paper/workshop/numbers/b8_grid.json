@@ -1,0 +1,306 @@
+{
+  "generated_by": "paper/workshop/numbers/b8_grid.py",
+  "model_tag": "Qwen2.5-7B-Instruct",
+  "sources": [
+    "results/E9/Qwen2.5-7B-Instruct/E9_grid_dots_Qwen2.5-7B-Instruct.csv",
+    "results/E9/joint_perlang_Qwen2.5-7B-Instruct.csv",
+    "results/E9/joint_pooled_Qwen2.5-7B-Instruct.csv"
+  ],
+  "design": {
+    "n_arms": 37,
+    "n_langs": 11,
+    "n_cells": 407,
+    "n_problems_per_cell": 250,
+    "generation_cap": 512,
+    "families": {
+      "alg1_leace": 6,
+      "alg1_proj": 6,
+      "alg1_wiener": 4,
+      "diffpca_leace": 7,
+      "diffpca_proj": 7,
+      "diffpca_wiener": 7
+    },
+    "dev_test_split": false,
+    "dose_ladder_samples": "the -1:1 diagonal of (lambda_mid, lambda_high) only"
+  },
+  "truncation_gate": {
+    "threshold": 0.05,
+    "cells_failing": 112,
+    "cells_passing": 295,
+    "clean_truncation_by_lang": {
+      "bn": 0.368,
+      "de": 0.044,
+      "en": 0.012,
+      "es": 0.004,
+      "fr": 0.032,
+      "ja": 0.024,
+      "ru": 0.008,
+      "sw": 0.08,
+      "te": 0.788,
+      "th": 0.092,
+      "zh": 0.004
+    }
+  },
+  "per_cell_counts": {
+    "accuracy_all_cells": {
+      "positive": 152,
+      "positive_gt_eps": 88,
+      "negative": 247,
+      "n": 407
+    },
+    "accuracy_gate_passing": {
+      "positive": 126,
+      "positive_gt_eps": 77,
+      "negative": 162,
+      "n": 295
+    },
+    "joint_all_cells": {
+      "positive": 110,
+      "positive_gt_eps": 65,
+      "negative": 289,
+      "n": 407
+    },
+    "joint_gate_passing": {
+      "positive": 94,
+      "positive_gt_eps": 56,
+      "negative": 195,
+      "n": 295
+    }
+  },
+  "pooled_holm": {
+    "all11": {
+      "n_arms": 37,
+      "clean_acc": 0.628,
+      "clean_fid": 0.9982,
+      "clean_joint": 0.6262,
+      "accuracy": {
+        "arms_above_clean": 12,
+        "surviving_holm": 1,
+        "surviving_holm_and_truncation_gate": 1,
+        "survivors": [
+          [
+            "e9_alg1_proj_r10_d050",
+            0.0295,
+            0.0,
+            false
+          ]
+        ]
+      },
+      "joint": {
+        "arms_above_clean": 3,
+        "surviving_holm": 1,
+        "surviving_holm_and_truncation_gate": 1,
+        "survivors": [
+          [
+            "e9_alg1_proj_r1_d100",
+            0.016,
+            0.0044,
+            0.0276,
+            0.045
+          ]
+        ],
+        "arms_below_clean": 34,
+        "significant_decreases": 32,
+        "worst": -0.5698,
+        "best": 0.016
+      }
+    },
+    "high": {
+      "n_arms": 37,
+      "clean_acc": 0.7571,
+      "clean_fid": 0.9989,
+      "clean_joint": 0.756,
+      "accuracy": {
+        "arms_above_clean": 20,
+        "surviving_holm": 2,
+        "surviving_holm_and_truncation_gate": 2,
+        "survivors": [
+          [
+            "e9_alg1_proj_r10_d050",
+            0.0326,
+            0.0,
+            false
+          ],
+          [
+            "e9_alg1_proj_r10_d100",
+            0.0343,
+            0.0125,
+            false
+          ]
+        ]
+      },
+      "joint": {
+        "arms_above_clean": 5,
+        "surviving_holm": 0,
+        "surviving_holm_and_truncation_gate": 0,
+        "survivors": [],
+        "arms_below_clean": 32,
+        "significant_decreases": 32,
+        "worst": -0.6909,
+        "best": 0.0171
+      }
+    },
+    "low": {
+      "n_arms": 37,
+      "clean_acc": 0.402,
+      "clean_fid": 0.997,
+      "clean_joint": 0.399,
+      "accuracy": {
+        "arms_above_clean": 9,
+        "surviving_holm": 0,
+        "surviving_holm_and_truncation_gate": 0,
+        "survivors": []
+      },
+      "joint": {
+        "arms_above_clean": 8,
+        "surviving_holm": 0,
+        "surviving_holm_and_truncation_gate": 0,
+        "survivors": [],
+        "arms_below_clean": 29,
+        "significant_decreases": 16,
+        "worst": -0.358,
+        "best": 0.015
+      }
+    }
+  },
+  "regression_d_acc_on_d_fid": {
+    "all_cells": {
+      "slope": 0.0796,
+      "intercept": -0.0455,
+      "r": 0.168,
+      "r2": 0.0282,
+      "n": 407
+    },
+    "gate_passing_cells": {
+      "slope": 0.0688,
+      "intercept": -0.0089,
+      "r": 0.3014,
+      "r2": 0.0908,
+      "n": 295
+    }
+  },
+  "arm_taxonomy_eps0.02": {
+    "trades": [
+      "e9_alg1_proj_r10_d050",
+      "e9_alg1_proj_r10_d100"
+    ],
+    "spends_for_nothing": [
+      "e9_alg1_leace_r10_d050",
+      "e9_alg1_leace_r10_d100",
+      "e9_alg1_leace_r10_d150",
+      "e9_alg1_leace_r10_d200",
+      "e9_alg1_leace_r4_d100",
+      "e9_alg1_proj_r10_d150",
+      "e9_alg1_proj_r4_d100",
+      "e9_alg1_wiener_r10_d050",
+      "e9_alg1_wiener_r10_d100",
+      "e9_alg1_wiener_r10_d150",
+      "e9_alg1_wiener_r10_d200",
+      "e9_diffpca_leace_r10_d050",
+      "e9_diffpca_leace_r4_d100",
+      "e9_diffpca_proj_r10_d050",
+      "e9_diffpca_proj_r4_d100",
+      "e9_diffpca_wiener_r10_d050",
+      "e9_diffpca_wiener_r4_d100"
+    ],
+    "loses_both": [
+      "e9_alg1_proj_r10_d200",
+      "e9_diffpca_leace_r10_d100",
+      "e9_diffpca_leace_r10_d150",
+      "e9_diffpca_leace_r10_d200",
+      "e9_diffpca_leace_r32_d100",
+      "e9_diffpca_proj_r10_d100",
+      "e9_diffpca_proj_r10_d150",
+      "e9_diffpca_proj_r10_d200",
+      "e9_diffpca_proj_r32_d100",
+      "e9_diffpca_wiener_r10_d100",
+      "e9_diffpca_wiener_r10_d150",
+      "e9_diffpca_wiener_r10_d200",
+      "e9_diffpca_wiener_r32_d100"
+    ],
+    "no_op": [
+      "e9_alg1_leace_r1_d100",
+      "e9_alg1_proj_r1_d100",
+      "e9_diffpca_leace_r1_d100",
+      "e9_diffpca_proj_r1_d100",
+      "e9_diffpca_wiener_r1_d100"
+    ],
+    "other": []
+  },
+  "arm_taxonomy_counts": {
+    "trades": 2,
+    "spends_for_nothing": 17,
+    "loses_both": 13,
+    "no_op": 5,
+    "other": 0
+  },
+  "rank1_noise_floor": {
+    "arms": [
+      "e9_alg1_leace_r1_d100",
+      "e9_alg1_proj_r1_d100",
+      "e9_diffpca_leace_r1_d100",
+      "e9_diffpca_proj_r1_d100",
+      "e9_diffpca_wiener_r1_d100"
+    ],
+    "pooled_d_acc": [
+      -0.0022,
+      -0.0011,
+      0.0015,
+      0.0029,
+      0.0167
+    ],
+    "sd": 0.0076,
+    "mean": 0.0036
+  },
+  "families": {
+    "alg1_leace": [
+      "e9_alg1_leace_r10_d050",
+      "e9_alg1_leace_r10_d100",
+      "e9_alg1_leace_r10_d150",
+      "e9_alg1_leace_r10_d200",
+      "e9_alg1_leace_r1_d100",
+      "e9_alg1_leace_r4_d100"
+    ],
+    "alg1_proj": [
+      "e9_alg1_proj_r10_d050",
+      "e9_alg1_proj_r10_d100",
+      "e9_alg1_proj_r10_d150",
+      "e9_alg1_proj_r10_d200",
+      "e9_alg1_proj_r1_d100",
+      "e9_alg1_proj_r4_d100"
+    ],
+    "alg1_wiener": [
+      "e9_alg1_wiener_r10_d050",
+      "e9_alg1_wiener_r10_d100",
+      "e9_alg1_wiener_r10_d150",
+      "e9_alg1_wiener_r10_d200"
+    ],
+    "diffpca_leace": [
+      "e9_diffpca_leace_r10_d050",
+      "e9_diffpca_leace_r10_d100",
+      "e9_diffpca_leace_r10_d150",
+      "e9_diffpca_leace_r10_d200",
+      "e9_diffpca_leace_r1_d100",
+      "e9_diffpca_leace_r32_d100",
+      "e9_diffpca_leace_r4_d100"
+    ],
+    "diffpca_proj": [
+      "e9_diffpca_proj_r10_d050",
+      "e9_diffpca_proj_r10_d100",
+      "e9_diffpca_proj_r10_d150",
+      "e9_diffpca_proj_r10_d200",
+      "e9_diffpca_proj_r1_d100",
+      "e9_diffpca_proj_r32_d100",
+      "e9_diffpca_proj_r4_d100"
+    ],
+    "diffpca_wiener": [
+      "e9_diffpca_wiener_r10_d050",
+      "e9_diffpca_wiener_r10_d100",
+      "e9_diffpca_wiener_r10_d150",
+      "e9_diffpca_wiener_r10_d200",
+      "e9_diffpca_wiener_r1_d100",
+      "e9_diffpca_wiener_r32_d100",
+      "e9_diffpca_wiener_r4_d100"
+    ]
+  }
+}
