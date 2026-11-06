@@ -88,7 +88,7 @@ Shaanil Punglia, Dadhichi Telwadkar, Vaibhav Rathore, Siddharth Sureka, and Neha
 
 Accepted at Multi-LLL 2026, co-located with AACL-IJCNLP 2026.
 
-The proceedings link will be added when available. Until then, the title, authors, and implementation are recorded in [`CITATION.cff`](CITATION.cff).
+Please cite the [arXiv preprint](https://arxiv.org/abs/2611.05278) using the BibTeX below or [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
 @misc{punglia2026beyondaccuracy,
@@ -96,8 +96,10 @@ The proceedings link will be added when available. Until then, the title, author
   author = {Punglia, Shaanil and Telwadkar, Dadhichi and Rathore, Vaibhav
             and Sureka, Siddharth and Bhargava, Neha},
   year = {2026},
-  note = {Accepted at Multi-LLL 2026, AACL-IJCNLP workshop; proceedings link forthcoming},
-  howpublished = {\url{https://github.com/pungyman/BeyondAccuracy}}
+  eprint = {2611.05278},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  url = {https://arxiv.org/abs/2611.05278}
 }
 ```
 
