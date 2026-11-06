@@ -4,7 +4,7 @@
 
 Official implementation of **Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve**, accepted at **[Multi-LLL 2026](https://xiaoaugenstern.github.io/Multi-LLL-2026/)**, a workshop at AACL-IJCNLP 2026.
 
-**[Results](#a-better-score-can-hide-a-worse-answer)** · **[Quick start](#quick-start)** · **[Reproduction guide](docs/reproduction.md)** · **[Code map](docs/code-map.md)** · **[Citation](#paper-and-citation)**
+**[Paper (arXiv)](https://arxiv.org/abs/2611.05278)** · **[Results](#a-better-score-can-hide-a-worse-answer)** · **[Quick start](#quick-start)** · **[Reproduction guide](docs/reproduction.md)** · **[Code map](docs/code-map.md)** · **[Citation](#paper-and-citation)**
 
 Language-subspace interventions edit LLM activations to improve multilingual reasoning. We test three separate claims: **what the subspaces capture, what projection removes, and what actually improves during generation.** The distinction matters: a mathematically correct answer can still fail the task when the model silently switches language.
 
