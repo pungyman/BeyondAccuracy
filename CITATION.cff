@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the accompanying paper when using this implementation. Proceedings metadata will be added when available."
+message: "Please cite the accompanying paper when using this implementation."
 title: "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve"
 type: software
 authors:
@@ -21,3 +21,20 @@ keywords:
   - multilingual reasoning
   - activation interventions
   - language subspaces
+preferred-citation:
+  type: article
+  title: "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve"
+  authors:
+    - family-names: Punglia
+      given-names: Shaanil
+    - family-names: Telwadkar
+      given-names: Dadhichi
+    - family-names: Rathore
+      given-names: Vaibhav
+    - family-names: Sureka
+      given-names: Siddharth
+    - family-names: Bhargava
+      given-names: Neha
+  year: 2026
+  journal: "arXiv preprint arXiv:2611.05278"
+  url: "https://arxiv.org/abs/2611.05278"
